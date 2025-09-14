@@ -6,7 +6,9 @@ if (isNaN(x)) {
 } else {
   let output = "";
   for (let i = 0; i < x; i++) {
-    output += "C is fun\n";
+    output += "C is fun";
+    if (i < x - 1) output += "\n";  // add newline only between lines
   }
   console.log(output);
 }
+
